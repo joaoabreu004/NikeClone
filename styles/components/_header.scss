@@ -1,0 +1,56 @@
+@import '../abstract/variaveis'; 
+
+header{
+    background: $cor-primaria;
+    grid-area: header;
+    display: flex;
+    .header-inner{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin: 1rem;
+        align-items: center;
+        .header-logos{
+            width: auto;
+            #jumperman{
+                width: 25px;
+            }
+            #snkrs{
+                width: 60px;
+            }
+            img{
+                margin-left: 2rem;
+            }
+        }
+
+        .header-options{
+            width: auto;
+            margin: 0 3rem 0 0;
+            ul{
+                display: flex;
+                li{
+                    margin: 0 2px 0 0 ;
+                    font-size: 16px;
+                    a{
+                        text-decoration: none;
+                        color: $cor-secundaria;
+                        &:hover{
+                            color: $cor-terciaria;
+                        }
+                    }
+                   
+                }
+                li:nth-child(2){
+                    &::before{
+                        content:"|";
+                        padding: 1em;
+                    }
+                    &::after{
+                        content: "|";
+                        padding: 1em;
+                    }
+                }
+            }
+        }
+    }
+} 

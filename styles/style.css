@@ -1,0 +1,55 @@
+header, body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background: #f7f7f7;
+  grid-area: header;
+  display: flex;
+}
+header .header-inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1rem;
+  align-items: center;
+}
+header .header-inner .header-logos {
+  width: auto;
+}
+header .header-inner .header-logos #jumperman {
+  width: 25px;
+}
+header .header-inner .header-logos #snkrs {
+  width: 60px;
+}
+header .header-inner .header-logos img {
+  margin-left: 2rem;
+}
+header .header-inner .header-options {
+  width: auto;
+  margin: 0 3rem 0 0;
+}
+header .header-inner .header-options ul {
+  display: flex;
+}
+header .header-inner .header-options ul li {
+  margin: 0 2px 0 0;
+  font-size: 16px;
+}
+header .header-inner .header-options ul li a {
+  text-decoration: none;
+  color: #a3998f;
+}
+header .header-inner .header-options ul li a:hover {
+  color: #000;
+}
+header .header-inner .header-options ul li:nth-child(2)::before {
+  content: "|";
+  padding: 1em;
+}
+header .header-inner .header-options ul li:nth-child(2)::after {
+  content: "|";
+  padding: 1em;
+}/*# sourceMappingURL=style.css.map */
