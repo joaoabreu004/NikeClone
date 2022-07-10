@@ -90,17 +90,15 @@ nav{
             display: none;
         }
         .show{
-            display: block !important;
-        }
-     
-        .nav-sectionOption{
-            height: 50vh;
+            display: flex !important;
+            flex-wrap: wrap;
             overflow: scroll;
             overflow-x: hidden;
-            display: inline;
+            justify-content:left;
+            height: 50vh;
         }
         ul{
-            margin:2rem 4rem;
+            margin:2rem 5rem;
             .tituloLista{
                 color: $cor-terciaria;
                 font-size: 25px;

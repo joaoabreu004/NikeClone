@@ -135,16 +135,15 @@ nav .nav-optionsInner #tab-option1-content, nav .nav-optionsInner #tab-option2-c
   display: none;
 }
 nav .nav-optionsInner .show {
-  display: block !important;
-}
-nav .nav-optionsInner .nav-sectionOption {
-  height: 50vh;
+  display: flex !important;
+  flex-wrap: wrap;
   overflow: scroll;
   overflow-x: hidden;
-  display: inline;
+  justify-content: left;
+  height: 50vh;
 }
 nav .nav-optionsInner ul {
-  margin: 2rem 4rem;
+  margin: 2rem 5rem;
 }
 nav .nav-optionsInner ul .tituloLista {
   color: #000;
