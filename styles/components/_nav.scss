@@ -1,0 +1,122 @@
+@import '../abstract/variaveis'; 
+
+nav{
+    .nav-inner{
+        // background-color: aquamarine;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:  0 0 ;
+        margin: 0 20px 0 0;
+        .nav-log{
+            padding: 0 4rem;
+            img{
+                height: 30px;
+            }
+        }
+        .nav-options{
+            justify-content: center;
+            display: flex;
+            margin: 2rem 0;
+            .nav-option{
+                justify-content: center;
+                align-items: center;
+                padding: 1rem 1.25rem;
+                font-weight: 400;
+                font-size: 20px;
+                
+                &:hover{
+                    cursor: pointer;
+                    border-bottom: 2px solid $cor-terciaria;
+                }
+            }
+
+        }
+        .nav-barraPesquisa{
+            background-color: $cor-primaria;
+            display: flex;
+            border-radius: 200px;
+            .nav-search{
+                display: flex;
+                flex-direction: row-reverse;
+                .nav-search-barra{
+                    border-radius: 200px;
+                    width: 170px;
+                    height: 50px;
+                    outline: none;
+                    border: none;
+                    background-color: $cor-primaria;
+                    font-family: $font-2;
+                }
+                .nav-seach-icon{
+                    border-radius: 200px;
+                    height: 50px;
+                    border: none;
+                    background-color: $cor-primaria;
+                    &:hover{
+                        background-color: black;
+                    }
+                    cursor: pointer;
+                    i{
+                        padding: 10px
+                    }
+                }
+            }
+        }
+
+        .nav-sacolinha{
+            button{
+                border: none;
+                background: #fff;
+                border-radius: 50px;
+                cursor: pointer;
+                margin-right: 2rem;
+                &:hover{
+                    background-color: $cor-primaria;
+                }
+                i{
+                    padding: 10px;
+                    font-size: 30px;
+                }
+            }
+
+        }
+    }
+
+    .nav-optionsInner{
+        width: 100%;
+        #tab-option1-content, #tab-option2-content,#tab-option3-content,#tab-option4-content,#tab-option5-content, #tab-option6-content{
+            display: none;
+        }
+        .show{
+            display: block !important;
+        }
+     
+        .nav-sectionOption{
+            height: 50vh;
+            overflow: scroll;
+            overflow-x: hidden;
+            display: inline;
+        }
+        ul{
+            margin:2rem 4rem;
+            .tituloLista{
+                color: $cor-terciaria;
+                font-size: 25px;
+                margin-bottom: 2rem;
+            }
+            li{
+                color: $cor-secundaria;
+                line-height: 2rem;
+                cursor: pointer;
+                transition: 1ms;
+                &:hover{
+                    transition: 1s;
+                    color: $cor-terciaria;
+                }
+            }
+        }
+
+    }
+}
