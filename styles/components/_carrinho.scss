@@ -1,0 +1,72 @@
+@import '../abstract/variaveis'; 
+
+.carrinho-lateral{
+    width: 35vw;
+    position: absolute;
+    height: 100vh;
+    background-color: $cor-primaria;
+    z-index: 1;
+    right: 0;
+    display: none;
+    .carrinho--leteral--header{
+        width: 100%;
+        height: 8%;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        color: #fff;
+        align-items: center;
+        justify-content: center;
+        .carrinho--lateral--titulo{
+            font-size: 25px;
+            padding: 0  3em;
+            text-align: center;
+        }
+        button{
+            border-radius: 50px;
+            background-color: black;
+            &:hover{
+                cursor: pointer;
+                background-color: $cor-secundaria;
+               
+            }
+            i{
+                color: #fff;
+                font-weight: 700;
+                font-size: 20px;
+            
+            }
+        }
+    }
+
+    .carrinho--lateral--conteudo{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 5rem;
+        #carrinho--lateral-conteudo--PMain{
+            font-size: 45px;
+            text-transform: uppercase;
+            margin: 1rem 0 ;
+        }
+        #carrinho--lateral-conteudo--PDescription{
+            margin: 1rem 0 ;
+            color: $cor-secundaria;
+            text-align: center;
+            padding: 0 2rem;
+            line-height: 1.5;
+        }
+        #carrinho--lateral--conteudo--btn{
+            border-radius: 40px;
+            border: none;
+            padding: 2rem 6rem;
+            font-weight: bold;
+            background-color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}
+
+.carrrinho-lateral--ativo{
+    display: block !important;
+}
