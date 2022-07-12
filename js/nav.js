@@ -4,7 +4,7 @@ const tabItemsContent = document.querySelectorAll('.tab-content-item')
 function selectItem(e){
     removeShow(); 
     const tabContentItem = document.querySelector(`#${this.id}-content`);
-    tabContentItem.classList.add('show');
+    tabContentItem.classList.toggle('show');
 }
 
 function removeShow(){
