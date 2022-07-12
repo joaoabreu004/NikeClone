@@ -16,6 +16,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
+    <aside class="carrinho-lateral">
+        <div class="carrinho--leteral--header">
+            <button class="carrinho-btn-fechar"><i class="fa-solid fa-xmark"></i></button>
+            <h2 class="carrinho--lateral--titulo">Seu Carrinho (0 itens)</h2>
+        </div>
+        <div class="carrinho--lateral--conteudo">
+            <p id="carrinho--lateral-conteudo--PMain">Seu carrinho está vazio</p>
+            <p id="carrinho--lateral-conteudo--PDescription">Navegue pelas categorias da loja ou faça uma busca pelo seu produto</p>
+            <button id="carrinho--lateral--conteudo--btn">Continuar comprando</button>
+        </div>
+    </aside>
+
     <header>
         <section class="header-inner">
             <div class="header-logos">
@@ -32,6 +44,8 @@
             </div>
         </section>
     </header>
+
+
     <nav>
         <section class="nav-inner">
             <div class="nav-log">
@@ -52,7 +66,7 @@
                 </form>
             </div>
             <div class="nav-sacolinha">
-                <button><i class="fa-solid fa-bag-shopping"></i></button>
+                <button class="carrinho-btn-abrir"><i class="fa-solid fa-bag-shopping"></i></button>
             </div>          
         </section>
         <section class="nav-optionsInner">
@@ -303,9 +317,9 @@
                 </ul>
             </div>   
         </section>
-
     </nav>
 
     <script src="./js/nav.js"></script>
+    <script src="./js/carrinho.js"></script>
 </body>
 </html>
