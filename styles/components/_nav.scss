@@ -2,9 +2,9 @@
 
 nav{
     .nav-inner{
-        // background-color: aquamarine;
         width: 100%;
         display: flex;
+        background-color: $cor-quinta;
         justify-content: space-around;
         align-items: center;
         padding:  0 0 ;
@@ -86,6 +86,9 @@ nav{
 
     .nav-optionsInner{
         width: 100%;
+        position: absolute;
+        background-color: $cor-quinta;
+        
         #tab-option1-content, #tab-option2-content,#tab-option3-content,#tab-option4-content,#tab-option5-content, #tab-option6-content{
             display: none;
         }

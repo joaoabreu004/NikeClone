@@ -4,7 +4,6 @@ html, body {
 
 header {
   background: #f7f7f7;
-  grid-area: header;
   display: flex;
 }
 header .header-inner {
@@ -56,6 +55,7 @@ header .header-inner .header-options ul li:nth-child(2)::after {
 nav .nav-inner {
   width: 100%;
   display: flex;
+  background-color: #fff;
   justify-content: space-around;
   align-items: center;
   padding: 0 0;
@@ -130,6 +130,8 @@ nav .nav-inner .nav-sacolinha button i {
 }
 nav .nav-optionsInner {
   width: 100%;
+  position: absolute;
+  background-color: #fff;
 }
 nav .nav-optionsInner #tab-option1-content, nav .nav-optionsInner #tab-option2-content, nav .nav-optionsInner #tab-option3-content, nav .nav-optionsInner #tab-option4-content, nav .nav-optionsInner #tab-option5-content, nav .nav-optionsInner #tab-option6-content {
   display: none;
@@ -165,6 +167,7 @@ nav .nav-optionsInner ul li:hover {
   width: 35vw;
   position: absolute;
   height: 100vh;
+  position: fixed;
   background-color: #f7f7f7;
   z-index: 1;
   right: 0;
@@ -229,13 +232,13 @@ nav .nav-optionsInner ul li:hover {
   display: block !important;
 }
 
-main {
-  height: auto;
-}
 main .conteudo-promocoes {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin: 2rem 0;
 }
 main .conteudo-promocoes .conteudo-promocoes-banner1 {
   width: 90%;
