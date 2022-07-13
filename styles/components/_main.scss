@@ -1,0 +1,17 @@
+@import '../abstract/variaveis'; 
+
+main{
+    height: auto;
+    .conteudo-promocoes{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .conteudo-promocoes-banner1{
+            width: 90%;
+            &:hover{
+                cursor: pointer
+            }
+        ;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-header, body {
+html, body {
   font-family: "Roboto", sans-serif;
 }
 
@@ -227,4 +227,19 @@ nav .nav-optionsInner ul li:hover {
 
 .carrrinho-lateral--ativo {
   display: block !important;
+}
+
+main {
+  height: auto;
+}
+main .conteudo-promocoes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .conteudo-promocoes .conteudo-promocoes-banner1 {
+  width: 90%;
+}
+main .conteudo-promocoes .conteudo-promocoes-banner1:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
