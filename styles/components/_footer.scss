@@ -1,0 +1,104 @@
+@import '../abstract/variaveis'; 
+
+footer{
+    background-color: $cor-terciaria;
+    color: $cor-secundaria;
+    .footer-info{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 0 5rem;
+        padding: 2rem 0;
+        justify-content: center;
+        a{
+            color: $cor-secundaria;
+            margin: 5px;
+            text-decoration: none;
+            &:hover{
+                color: $cor-primaria;
+            }
+        }
+        .footer-h1{
+            font-size: 20px;
+            margin: 1rem 5px;
+            color: $cor-primaria;
+        }
+        .footer-info-col1{
+            width: 300px;
+        }
+        .footer-info-col2{
+            .opicoes{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .footer-info-col3{
+            .opicoes{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .footer-col4-redes{
+            margin: 2rem 0;
+            a{
+                color: $cor-secundaria;
+                margin: 5px;
+                &:hover{
+                    color: $cor-primaria;
+                }
+            }
+        }
+
+        .footer-col4-pagamentos{
+            width: 100%;
+            .footer-info-pagamentos{
+                display: flex;
+                flex-wrap:wrap ;
+                div{
+                    background-color: #fff;
+                    width: 50px;
+                    margin: 3px;
+                    padding: 6px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+
+    hr{
+        width: 90%;
+        outline: none;
+        background-color: $cor-secundaria;
+        height: 1px;
+    }
+
+    .footer-info-pt2{
+        display: flex;
+        justify-content: space-between;       
+        margin: 0 5rem;
+        padding: 2rem 0;
+        
+        .footer-info-termos{
+            a{
+                color: $cor-secundaria;
+                margin: 10px;
+                text-decoration: none;
+
+                &:hover{
+                    color: $cor-primaria;
+                }
+            }
+
+        }
+        .footer-info-termos-pt2{
+            width: 50%;
+            p{
+                font-size: 15px;
+                text-align: end;
+            }
+        }
+    }
+}
+
+
