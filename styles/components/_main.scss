@@ -29,6 +29,61 @@ main{
                 }
             }
         }
+
+        .informacoes-promocoes{
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            h2{
+                font-size: 50px;
+                font-weight: bolder;
+            }
+            p{
+                margin: 1rem 0;
+                font-weight: 800;
+            }
+            button{
+                color: $cor-primaria;
+                background-color: $cor-terciaria;
+                width: auto;
+                font-weight: 900;
+                outline: none;
+                padding: 10px;
+                border-radius: 60px;
+                cursor: pointer;
+            }
+        }
+
+        .cards-carrousel{
+            display: flex;
+        }
+        .card{
+            display: grid;
+            width: 29vw;
+            grid-template-rows: auto 100px;
+            grid-template-areas: "card-img" "card-conteudo";
+            margin: 0 1rem;
+            .card-img{
+                grid-area: "card-img";
+                .img{
+                    width: 100%;
+                }
+            }
+            .card-conteudo{
+                grid-area: "card-conteudo";
+                margin: 1rem 0;
+                .card-conteudo-titulo{
+                    font-weight: 600;
+                    font-size: 20px;
+                }
+                .card-conteudo-preco{
+                    padding: 10px 0;
+                    font-weight: 500;
+                }
+            }
+        }
     }
 
 
