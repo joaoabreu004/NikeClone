@@ -58,17 +58,40 @@ main{
 
         .cards-carrousel{
             display: flex;
+            .swiper{
+                width: 1400px;
+            }
+            .btn-carrousel{
+                background-color: black;
+                height: 40px;
+                width: 40px;
+                border-radius: 50px;
+                font-size: 25px;
+                padding: 5px;
+                color: $cor-primaria;
+               
+            }
+
+            .swiper-button-next{
+                &::after{
+                    display: none;
+                }
+            }
+            .swiper-button-prev{
+                &::after{
+                    display: none;
+                }
+            }
         }
         .card{
             display: grid;
-            width: 29vw;
+            width: 20vw;
             grid-template-rows: auto 100px;
-            grid-template-areas: "card-img" "card-conteudo";
-            margin: 0 1rem;
             .card-img{
                 grid-area: "card-img";
                 .img{
-                    width: 100%;
+                    max-width: 100%;
+                    cursor: pointer;
                 }
             }
             .card-conteudo{

@@ -286,18 +286,35 @@ main .conteudo-promocoes .informacoes-promocoes button {
 main .conteudo-promocoes .cards-carrousel {
   display: flex;
 }
+main .conteudo-promocoes .cards-carrousel .swiper {
+  width: 1400px;
+}
+main .conteudo-promocoes .cards-carrousel .btn-carrousel {
+  background-color: black;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  font-size: 25px;
+  padding: 5px;
+  color: #f7f7f7;
+}
+main .conteudo-promocoes .cards-carrousel .swiper-button-next::after {
+  display: none;
+}
+main .conteudo-promocoes .cards-carrousel .swiper-button-prev::after {
+  display: none;
+}
 main .conteudo-promocoes .card {
   display: grid;
-  width: 29vw;
+  width: 20vw;
   grid-template-rows: auto 100px;
-  grid-template-areas: "card-img" "card-conteudo";
-  margin: 0 1rem;
 }
 main .conteudo-promocoes .card .card-img {
   grid-area: "card-img";
 }
 main .conteudo-promocoes .card .card-img .img {
-  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
 }
 main .conteudo-promocoes .card .card-conteudo {
   grid-area: "card-conteudo";
