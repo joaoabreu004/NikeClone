@@ -90,21 +90,63 @@ main{
             .card-img{
                 grid-area: "card-img";
                 .img{
-                    max-width: 100%;
+                    width: 100%;
                     cursor: pointer;
+                    transition: 1s;
+                    height: 100%;
+                    &:hover{           
+                        -webkit-transform: scale(1.02);
+                        -ms-transform: scale(1.02);
+                        transform: scale(1.02);
+                    }
                 }
+              
             }
             .card-conteudo{
-                grid-area: "card-conteudo";
-                margin: 1rem 0;
+               
+                // margin: 1rem 0;
                 .card-conteudo-titulo{
                     font-weight: 600;
                     font-size: 20px;
+                    margin-top: 1rem ;
+                    // margin: 1rem;
                 }
                 .card-conteudo-preco{
                     padding: 10px 0;
                     font-weight: 500;
                 }
+            }
+        }
+    }
+
+    .conteudo-promocoes-beneficios{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: "col1 col2 col3";
+        align-items: stretch;
+        margin-top: 2rem;
+        grid-gap: 10px; 
+        width: 90%;
+        justify-items: center;
+        .beneficios{
+            display: flex;
+            flex-direction: column;
+            img{
+                width: 450px;
+                justify-content:center;
+                cursor: pointer;
+                transition: 1s;
+                &:hover{           
+                    -webkit-transform: scale(1.02);
+                    -ms-transform: scale(1.02);
+                    transform: scale(1.02);
+                }
+            }
+            p{
+                margin-top: 1rem;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 1.3;
             }
         }
     }
@@ -115,4 +157,7 @@ main{
         font-weight: 500;
         margin: 2rem 5rem;
     }
+
+
+
 }
