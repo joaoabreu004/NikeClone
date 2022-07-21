@@ -1,14 +1,27 @@
 @import '../abstract/variaveis'; 
 
+
 header{
-    background: $cor-primaria;
+    background-color: $cor-primaria;
     display: flex;
+    @include xs{
+        background-color: #fff;
+    }    
+
+    @include xl{
+        background-color: $cor-primaria;
+    }
     .header-inner{
-        display: flex;
         width: 100%;
         justify-content: space-between;
         margin: 1rem;
         align-items: center;
+        @include xs{
+            display: none;
+        }
+        @include xl{
+            display: flex;
+        }
         .header-logos{
             width: auto;
             #jumperman{
@@ -52,4 +65,5 @@ header{
             }
         }
     }
+
 } 

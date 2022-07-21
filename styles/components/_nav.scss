@@ -1,9 +1,89 @@
 @import '../abstract/variaveis'; 
 
 nav{
-    .nav-inner{
+    .nav-inner-sm{
+        margin: 0 1rem;
+        @include xs{
+            display: block;
+        }
+        @include xl{
+            display: none;
+        }
+        .icones{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 5px;
+        }
+        .sub-icones{
+            display: flex;
+            .nav-sacolinha{
+                button{
+                    border: none;
+                    background: #fff;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $cor-primaria;
+                    }
+                    i{
+                        // padding: 10px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        .nav-barraPesquisa{
+            background-color: $cor-primaria;
+            display: flex;
+            border-radius: 50px;
+            align-items: center;
+            text-align: center;
+            margin-top: 16px ;
+
+            .nav-search{
+                display: flex;
+                flex-direction: row-reverse;
+                .nav-search-barra{
+                    border-radius: 200px;
+                    width: 170px;
+                    height: 50px;
+                    outline: none;
+                    border: none;
+                    background-color: $cor-primaria;
+                    font-family: $font-2;
+                    
+                }
+                .nav-seach-icon{
+                    border-radius: 50px;
+                    height: 50px;
+                    background-color: $cor-primaria;
+                    margin: 1px;
+                    border: none;
+                    font-size: 13px;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $cor-secundaria;
+            
+                    }
+                    i{
+                        padding: 10px
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .nav-inner-xl{
+        @include xs{
+            display: none;
+        }
+        @include xl{
+            display: flex;
+        }
         width: 100%;
-        display: flex;
         background-color: $cor-quinta;
         justify-content: space-around;
         align-items: center;
@@ -12,13 +92,18 @@ nav{
         .nav-log{
             padding: 0 4rem;
             img{
-                height: 30px;
+               height: 30px;
             }
         }
         .nav-options{
             justify-content: center;
-            display: flex;
             margin: 2rem 0;
+            @include xs{
+                display: none;
+            }
+            @include xl{
+                display: flex;
+            }
             .nav-option{
                 justify-content: center;
                 align-items: center;
@@ -36,7 +121,9 @@ nav{
         .nav-barraPesquisa{
             background-color: $cor-primaria;
             display: flex;
-            border-radius: 200px;
+            border-radius: 50px;
+            align-items: center;
+            text-align: center;
             .nav-search{
                 display: flex;
                 flex-direction: row-reverse;
@@ -48,16 +135,20 @@ nav{
                     border: none;
                     background-color: $cor-primaria;
                     font-family: $font-2;
+                    
                 }
                 .nav-seach-icon{
-                    border-radius: 200px;
+                    border-radius: 50px;
                     height: 50px;
-                    border: none;
                     background-color: $cor-primaria;
-                    &:hover{
-                        background-color: black;
-                    }
+                    margin: 1px;
+                    border: none;
+                    font-size: 13px;
                     cursor: pointer;
+                    &:hover{
+                        background-color: $cor-secundaria;
+            
+                    }
                     i{
                         padding: 10px
                     }
@@ -88,7 +179,12 @@ nav{
         width: 100%;
         position: absolute;
         background-color: $cor-quinta;
-        
+        @include xs{
+            display: none;
+        }
+        @include xl{
+            display: block;
+        }
         #tab-option1-content, #tab-option2-content,#tab-option3-content,#tab-option4-content,#tab-option5-content, #tab-option6-content{
             display: none;
         }
