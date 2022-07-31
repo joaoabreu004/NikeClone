@@ -370,9 +370,19 @@ main .conteudo-promocoes .conteudo-promocoes-display {
   display: flex;
 }
 main .conteudo-promocoes .conteudo-promocoes-display .conteudo-colecoes-banner {
-  height: 80vh;
-  padding: 0 0.85rem;
   cursor: pointer;
+}
+@media (min-width: 0) {
+  main .conteudo-promocoes .conteudo-promocoes-display .conteudo-colecoes-banner {
+    height: auto;
+    padding: 0 0.25rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .conteudo-promocoes .conteudo-promocoes-display .conteudo-colecoes-banner {
+    height: 80vh;
+    padding: 0 0.85rem;
+  }
 }
 main .conteudo-promocoes .conteudo-promocoes-display .conteudo-colecoes-banner img {
   width: 100%;
@@ -403,8 +413,15 @@ main .conteudo-promocoes .informacoes-promocoes button {
   border-radius: 60px;
   cursor: pointer;
 }
-main .conteudo-promocoes .cards-carrousel {
-  display: flex;
+@media (min-width: 0) {
+  main .conteudo-promocoes .cards-carrousel {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  main .conteudo-promocoes .cards-carrousel {
+    display: flex;
+  }
 }
 main .conteudo-promocoes .cards-carrousel .swiper {
   width: 1400px;
@@ -479,22 +496,78 @@ main .conteudo-promocoes-beneficios .beneficios p {
   font-size: 20px;
   line-height: 1.3;
 }
-main .conteudo-promocoes-titulos {
-  font-size: 35px;
-  font-weight: 500;
-  margin: 2rem 5rem;
+@media (min-width: 0) {
+  main .conteudo-promocoes-beneficios {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  main .conteudo-promocoes-beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "col1 col2 col3";
+    align-items: stretch;
+    margin-top: 2rem;
+    grid-gap: 10px;
+    width: 90%;
+    justify-items: center;
+  }
+}
+main .conteudo-promocoes-beneficios .beneficios {
+  display: flex;
+  flex-direction: column;
+}
+main .conteudo-promocoes-beneficios .beneficios img {
+  width: 450px;
+  justify-content: center;
+  cursor: pointer;
+  transition: 1s;
+}
+main .conteudo-promocoes-beneficios .beneficios img:hover {
+  transform: scale(1.02);
+}
+main .conteudo-promocoes-beneficios .beneficios p {
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+}
+@media (min-width: 0) {
+  main .conteudo-promocoes-titulos {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .conteudo-promocoes-titulos {
+    font-size: 35px;
+    font-weight: 500;
+    margin: 2rem 5rem;
+  }
 }
 
 footer {
-  background-color: #000;
+  background-color: #111;
   color: #a3998f;
 }
 footer .footer-info {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
   margin: 0 5rem;
   padding: 2rem 0;
   justify-content: center;
+}
+@media (min-width: 0) {
+  footer .footer-info {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+  }
 }
 footer .footer-info a {
   color: #a3998f;
@@ -520,24 +593,39 @@ footer .footer-info .footer-info-col3 .opicoes {
   display: flex;
   flex-direction: column;
 }
-footer .footer-info .footer-col4-redes {
-  margin: 2rem 0;
+@media (min-width: 0) {
+  footer .footer-info .footer-info-col4 {
+    margin: 3rem 0;
+  }
 }
-footer .footer-info .footer-col4-redes a {
+@media (min-width: 1200px) {
+  footer .footer-info .footer-info-col4 {
+    margin: 0;
+  }
+}
+footer .footer-info .footer-info-col4 .footer-col4-redes {
+  margin: 3rem 0;
+}
+footer .footer-info .footer-info-col4 .footer-col4-redes a {
   color: #a3998f;
   margin: 5px;
 }
-footer .footer-info .footer-col4-redes a:hover {
+@media (min-width: 0) {
+  footer .footer-info .footer-info-col4 .footer-col4-redes a {
+    font-size: 23px;
+  }
+}
+footer .footer-info .footer-info-col4 .footer-col4-redes a:hover {
   color: #f7f7f7;
 }
-footer .footer-info .footer-col4-pagamentos {
+footer .footer-info .footer-info-col4 .footer-col4-pagamentos {
   width: 100%;
 }
-footer .footer-info .footer-col4-pagamentos .footer-info-pagamentos {
+footer .footer-info .footer-info-col4 .footer-col4-pagamentos .footer-info-pagamentos {
   display: flex;
   flex-wrap: wrap;
 }
-footer .footer-info .footer-col4-pagamentos .footer-info-pagamentos div {
+footer .footer-info .footer-info-col4 .footer-col4-pagamentos .footer-info-pagamentos div {
   background-color: #fff;
   width: 50px;
   margin: 3px;
@@ -546,17 +634,51 @@ footer .footer-info .footer-col4-pagamentos .footer-info-pagamentos div {
   justify-content: center;
   border-radius: 2px;
 }
+@media (min-width: 0) {
+  footer .footer-info .footer-info-col4 .footer-col4-pagamentos .footer-info-pagamentos div {
+    width: 76px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info .footer-info-col4 .footer-col4-pagamentos .footer-info-pagamentos div {
+    width: 50px;
+  }
+}
 footer hr {
   width: 90%;
   outline: none;
   background-color: #a3998f;
   height: 1px;
 }
+@media (min-width: 0) {
+  footer hr {
+    width: 70%;
+  }
+}
+@media (min-width: 1200px) {
+  footer hr {
+    width: 90%;
+  }
+}
 footer .footer-info-pt2 {
-  display: flex;
   justify-content: space-between;
-  margin: 0 5rem;
   padding: 2rem 0;
+}
+@media (min-width: 0) {
+  footer .footer-info-pt2 {
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info-pt2 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 5rem;
+  }
 }
 footer .footer-info-pt2 .footer-info-termos a {
   color: #a3998f;
@@ -566,10 +688,30 @@ footer .footer-info-pt2 .footer-info-termos a {
 footer .footer-info-pt2 .footer-info-termos a:hover {
   color: #f7f7f7;
 }
+@media (min-width: 0) {
+  footer .footer-info-pt2 .footer-info-termos a {
+    font-size: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info-pt2 .footer-info-termos a {
+    font-size: 15px;
+  }
+}
 footer .footer-info-pt2 .footer-info-termos-pt2 {
   width: 50%;
 }
-footer .footer-info-pt2 .footer-info-termos-pt2 p {
-  font-size: 15px;
-  text-align: end;
+@media (min-width: 0) {
+  footer .footer-info-pt2 .footer-info-termos-pt2 p {
+    font-size: 10px;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  footer .footer-info-pt2 .footer-info-termos-pt2 p {
+    font-size: 15px;
+    padding: 2rem 0;
+    text-align: end;
+  }
 }/*# sourceMappingURL=style.css.map */

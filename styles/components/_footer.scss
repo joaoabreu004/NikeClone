@@ -1,14 +1,21 @@
 @import '../abstract/variaveis'; 
 
 footer{
-    background-color: $cor-terciaria;
+    background-color: #111;
     color: $cor-secundaria;
     .footer-info{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
         margin: 0 5rem;
         padding: 2rem 0;
         justify-content: center;
+        @include xs{
+            display: grid;
+            grid-template-rows: repeat(4, auto);
+        }; 
+        @include xl{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows:auto ;
+        };
         a{
             color: $cor-secundaria;
             margin: 5px;
@@ -37,33 +44,52 @@ footer{
                 flex-direction: column;
             }
         }
-        .footer-col4-redes{
-            margin: 2rem 0;
-            a{
-                color: $cor-secundaria;
-                margin: 5px;
-                &:hover{
-                    color: $cor-primaria;
+        .footer-info-col4{
+            @include xs{
+                margin: 3rem 0;
+            }
+            @include xl{
+                margin: 0;
+            }
+            .footer-col4-redes{
+                margin: 3rem 0;
+                a{
+                    color: $cor-secundaria;
+                    margin: 5px;
+                    @include xs{
+                        font-size: 23px;
+                    }
+                    &:hover{
+                        color: $cor-primaria;
+                    }
+                }
+            }
+    
+            .footer-col4-pagamentos{
+                width: 100%;
+                .footer-info-pagamentos{
+                    display: flex;
+                    flex-wrap:wrap;
+                    div{
+                        background-color: #fff;
+                        width: 50px;
+                        margin: 3px;
+                        padding: 6px;
+                        display: flex;
+                        justify-content: center;
+                        border-radius: 2px;
+                        @include xs{
+                            width: 76px;
+                        }
+                        @include xl{
+                            width: 50px;
+                        }
+                    }
                 }
             }
         }
 
-        .footer-col4-pagamentos{
-            width: 100%;
-            .footer-info-pagamentos{
-                display: flex;
-                flex-wrap:wrap ;
-                div{
-                    background-color: #fff;
-                    width: 50px;
-                    margin: 3px;
-                    padding: 6px;
-                    display: flex;
-                    justify-content: center;
-                    border-radius: 2px;
-                }
-            }
-        }
+        
     }
 
     hr{
@@ -71,32 +97,69 @@ footer{
         outline: none;
         background-color: $cor-secundaria;
         height: 1px;
+        @include xs{
+            width: 70%;
+        }
+        @include xl{
+            width: 90%;
+        }
     }
 
     .footer-info-pt2{
-        display: flex;
+        
         justify-content: space-between;       
-        margin: 0 5rem;
         padding: 2rem 0;
+        @include xs{
+            padding: 0 1rem; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem 0;
+        }
+        @include xl{
+            display: flex;
+            flex-direction: row;
+            margin: 0 5rem;
+
+        }
+
+        
         
         .footer-info-termos{
             a{
                 color: $cor-secundaria;
                 margin: 10px;
-                text-decoration: none;
-
+                text-decoration: none;       
                 &:hover{
                     color: $cor-primaria;
+                }
+                @include xs{
+                    font-size: 10px;
+                }
+                @include xl{
+                    font-size: 15px;
                 }
             }
 
         }
+
         .footer-info-termos-pt2{
             width: 50%;
+
             p{
-                font-size: 15px;
-                text-align: end;
+                // text-align: end;
+                @include xs{
+                    font-size: 10px;
+                    padding: 1rem 0;
+                    text-align: center;
+                }
+                @include xl{
+                    font-size: 15px;
+                    padding: 2rem 0;
+                    text-align: end;
+                }
             }
+           
         }
     }
 }
