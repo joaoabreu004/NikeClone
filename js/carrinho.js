@@ -1,4 +1,4 @@
-const btnAbrir = document.querySelector('.carrinho-btn');
+const btnAbrir = document.querySelector('.carrinho-btn-abrir');
 const btnFechar = document.querySelector('.carrinho-btn-fechar'); 
 const asideLateral = document.querySelector('.carrinho-lateral'); 
 
