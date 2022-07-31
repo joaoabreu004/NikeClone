@@ -1,4 +1,4 @@
-const btnAbrir = document.querySelector('.carrinho-btn-abrirTest'); 
+const btnAbrir = document.querySelector('.carrinho-btn');
 const btnFechar = document.querySelector('.carrinho-btn-fechar'); 
 const asideLateral = document.querySelector('.carrinho-lateral'); 
 
@@ -8,6 +8,7 @@ const asideLateral = document.querySelector('.carrinho-lateral');
 btnAbrir.addEventListener('click', () => {
     asideLateral.classList.add('carrrinho-lateral--ativo');
 })
+
 
 
 btnFechar.addEventListener('click', () => {
