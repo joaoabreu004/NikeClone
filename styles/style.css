@@ -400,8 +400,9 @@ main .conteudo-promocoes .informacoes-promocoes h2 {
   font-weight: bolder;
 }
 main .conteudo-promocoes .informacoes-promocoes p {
-  margin: 1rem 0;
-  font-weight: 800;
+  align-items: center;
+  margin: 2rem 2rem;
+  font-weight: 700;
 }
 main .conteudo-promocoes .informacoes-promocoes button {
   color: #f7f7f7;
