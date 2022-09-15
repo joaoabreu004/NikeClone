@@ -424,7 +424,7 @@ main .conteudo-promocoes .informacoes-promocoes button {
   }
 }
 main .conteudo-promocoes .cards-carrousel .swiper {
-  width: 1400px;
+  width: 90vw;
 }
 main .conteudo-promocoes .cards-carrousel .btn-carrousel {
   background-color: black;
@@ -518,7 +518,7 @@ main .conteudo-promocoes-beneficios .beneficios {
   flex-direction: column;
 }
 main .conteudo-promocoes-beneficios .beneficios img {
-  width: 450px;
+  width: 100%;
   justify-content: center;
   cursor: pointer;
   transition: 1s;

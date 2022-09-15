@@ -72,7 +72,7 @@ main{
                 display: flex;
             }
             .swiper{
-                width: 1400px;
+                width: 90vw;
             }
             .btn-carrousel{
                 background-color: black;
@@ -184,7 +184,7 @@ main{
             display: flex;
             flex-direction: column;
             img{
-                width: 450px;
+                width: 100%;
                 justify-content:center;
                 cursor: pointer;
                 transition: 1s;
