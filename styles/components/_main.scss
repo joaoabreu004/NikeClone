@@ -45,6 +45,10 @@ main{
             text-align: center;
             align-items: center;
             h2{
+                @include xs{
+                    font-size: 40px;
+                    margin: 0 2rem;
+                }
                 font-size: 50px;
                 font-weight: bolder;
             }

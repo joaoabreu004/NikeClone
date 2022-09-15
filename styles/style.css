@@ -399,6 +399,12 @@ main .conteudo-promocoes .informacoes-promocoes h2 {
   font-size: 50px;
   font-weight: bolder;
 }
+@media (min-width: 0) {
+  main .conteudo-promocoes .informacoes-promocoes h2 {
+    font-size: 40px;
+    margin: 0 2rem;
+  }
+}
 main .conteudo-promocoes .informacoes-promocoes p {
   align-items: center;
   margin: 2rem 2rem;
